@@ -1,0 +1,12 @@
+{
+  "release": "debug",
+  "verbose": "true",
+  "platform": "android",
+  "androidAlias": "key0",
+  "androidAliasPassword": "REPLACE_WITH_YOUR_OWN_SECRET",
+  "androidKeystore": "certificates/android.p12",
+  "androidKeystorePassword": "REPLACE_WITH_YOUR_OWN_SECRET",
+  "iosDevelopment": "certificates/example.mobileprovision",
+  "iosDevP12": "certificates/ios_development.p12",
+  "iosDevP12Password": "REPLACE_WITH_YOUR_OWN_SECRET"
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashcam Videos</title>
+</head>
+<body>
+  <h1>Available Dashcam Videos</h1>
+  <ul>
+    {% for video in videos %}
+      <li>
+        <a href="{{ url_for('serve_video', filename=video) }}">{{ video }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</body>
+</html>
