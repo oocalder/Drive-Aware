@@ -27,11 +27,8 @@ Paste the following in the **first object** of the `portfolioProjects` array in 
 },
 ```
 
-**One additional website edit:** the Projects animation in your current `portfolio/js/portfolio.js` has a separate hard-coded info label (`STATUS Live`, near the Projects drawing code). Change that label to `STATUS Prototype` for this project; updating the first `portfolioProjects` object alone will not correct it.
 
-## What the project detail page should emphasize
-
-Present **one engineering case study**, not a sales pitch for a finished vehicle safety product:
+Present **engineering case study**, not a sales pitch for a finished vehicle safety product:
 
 1. **Problem / goal:** dashcam recordings live on an SD card and are difficult to correlate with event metadata.
 2. **Architecture:** consumer camera → accessible recordings → Pi Flask service → local browser and JSON logs.
@@ -39,17 +36,6 @@ Present **one engineering case study**, not a sales pitch for a finished vehicle
 4. **Decision:** pivoted from a phone-based collision detector toward the camera's existing event recording capability after discovering hardware access limitations.
 5. **Troubleshooting:** separate HTTP endpoint validation with `curl` from broken Cordova networking.
 6. **Next phase:** unify watcher and video paths; then add dashboard timeline; mobile telemetry and Alexa are lower-priority integrations.
-
-## Suggested one-minute interview explanation
-
-> I built Drive Aware to see whether I could put consumer dashcam footage and motion records behind one local interface. I used a Raspberry Pi as the server and Flask to list videos, serve recordings, and accept motion samples as JSON. I validated the backend with curl and confirmed local video browsing, then explored an Android accelerometer app and file-watching automation. Those integrations exposed real limitations, including Cordova network restrictions and the dashcam's closed wireless interface. Rather than claim a finished collision detector, I documented the working services and the boundaries between them. The next improvement would be consistent event IDs linking camera files to backend records.
-
-## Evidence to collect if revisiting the Pi later
-
-- Screenshot of the server listing your actual sample/test footage without revealing personal locations or other people's faces.
-- Screenshot or brief screen recording showing a local `curl` call returning success, then the log endpoint containing the record.
-- A simple diagram or short flow animation showing implemented vs proposed components (clearly labeled).
-- Optional mobile UI capture with an explicit **experimental** caption.
 
 ## Career positioning
 
