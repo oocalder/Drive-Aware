@@ -200,15 +200,6 @@ The video homepage requires the original dashcam folder, or the app's configured
 
 For Android, the `mobile/` directory is **archived source, not a verified build recipe**. `voltbuilder.example.json` cannot sign a package until you supply your *own* signing assets; never commit them. The phone network configuration also requires revision before any retest.
 
-## 9. How I would present this project
-
-**One-line portfolio description:** Designed a Raspberry Pi/Flask prototype for browsing dashcam footage and logging motion events, with documented experiments in mobile sensor integration and home alerts.
-
-**Emphasize:** API tests, integration boundaries, investigation of closed hardware interfaces, file-system fallbacks, JSON persistence, and candid scoping of the unfinished pieces.
-
-**Avoid claiming:** an operational collision detection engine, automatically triggered emergency recordings, a reliable mobile data feed, or working Alexa announcements.
-
-For suggested copy that fits the `Project 01` data fields in my current portfolio, see [`docs/PORTFOLIO_PROJECT_01.md`](docs/PORTFOLIO_PROJECT_01.md).
 
 ---
 
